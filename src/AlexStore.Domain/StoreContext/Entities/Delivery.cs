@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AlexStore.Domain.StoreContext
+namespace AlexStore.Domain.StoreContext.Entities
 {
-    public class Delivery.Entities
+    public class Delivery
     {
         public DateTime CreateDate { get; set; }
 
