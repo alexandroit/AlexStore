@@ -4,6 +4,22 @@ namespace AlexStore.Domain.StoreContext.Entities
 {
     public class Customer
     {
+        public Customer(
+            string firstName, 
+            string lastName, 
+            string document, 
+            string email, 
+            string phone, 
+            string address)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Document = document;
+            Email = email;
+            Phone = phone;
+            Address = address;
+        }
+
         #region Properties
         public Guid Id { get; private set; }
 
@@ -33,6 +49,11 @@ namespace AlexStore.Domain.StoreContext.Entities
 
         }
         #endregion
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 
 }

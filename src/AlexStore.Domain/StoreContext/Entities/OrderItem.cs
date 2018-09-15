@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AlexStore.Domain.StoreContext.Entities
+﻿namespace AlexStore.Domain.StoreContext.Entities
 {
     public class OrderItem
     {
-        public Order Order { get; set; }
+        public OrderItem(Product product, decimal quantity)
+        {
+            Product = product;
+            Quantity = quantity;
+            Price = product.Price;
+        }
 
-        public Product Product { get; set; }
+        public Product Product { get; private set; }
 
-        public int Quantity { get; set; }
+        public decimal Quantity { get; private set; }
 
-        public double Price { get; set; }
+        public decimal Price { get; private set; }
     }
 }
