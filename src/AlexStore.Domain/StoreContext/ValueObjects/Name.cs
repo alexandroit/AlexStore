@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using FluentValidator;
+using FluentValidator.Validation;
 
 namespace AlexStore.Domain.StoreContext.ValueObjects
 {
-    public class Name
+    public class Name : Notifiable
     {
         public Name(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
+            var contracts = new ValidationContract()
+                .Requires()
+                .HasMinLen(FirstName, 3, "FirstName", "O nome deve conter pelo menos 3 caracteres")
+                .HasMaxLen(FirstName, 40, "FirstName", "O nome deve conter no maximo 40 caracteres")
+                .HasMinLen(LastName, 3, "LastName", "O nome deve conter pelo menos 3 caracteres")
+                .HasMaxLen(LastName, 40, "LastName", "O nome deve conter no maximo 40 caracteres");
+            AddNotifications(contracts);
         }
 
+        //EF
         protected Name()
         {
 

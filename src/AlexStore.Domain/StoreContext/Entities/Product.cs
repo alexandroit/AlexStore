@@ -1,6 +1,8 @@
-﻿namespace AlexStore.Domain.StoreContext.Entities
+﻿using FluentValidator;
+
+namespace AlexStore.Domain.StoreContext.Entities
 {
-    public class Product
+    public class Product : Notifiable
     {
         public Product(
             string title, 

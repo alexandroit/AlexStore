@@ -1,6 +1,7 @@
 ﻿using AlexStore.Domain.StoreContext.ValueObjects;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AlexStore.Domain.StoreContext.Entities
 {
@@ -30,13 +31,18 @@ namespace AlexStore.Domain.StoreContext.Entities
 
         public string Phone { get; private set; }
 
-        public IReadOnlyCollection<Address> Addresses { get; private set; }
+        public IList<Address> Addresses { get; private set; }
         #endregion
 
         #region Methods
         public void Register()
         {
 
+        }
+
+        public void AddAddress(Address address)
+        {
+            Addresses.Add(address);
         }
         #endregion
 
