@@ -1,4 +1,4 @@
-﻿using AlexStore.Domain.StoreContext.Extensions;
+﻿using AlexStore.Domain.SharedContext.Extensions;
 using FluentValidator;
 using FluentValidator.Validation;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AlexStore.Domain.StoreContext.ValueObjects
+namespace AlexStore.Domain.SharedContext.ValueObjects
 {
     public class Document : Notifiable
     {

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AlexStore.Domain.StoreContext.ValueObjects
+namespace AlexStore.Domain.SharedContext.ValueObjects
 {
     public class Email : Notifiable
     {

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="FinancialContext\" />
+    <Folder Include="StoreContext\ValueObjects\" />
   </ItemGroup>
 
   <ItemGroup>

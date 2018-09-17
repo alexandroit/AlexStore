@@ -1,4 +1,4 @@
-﻿using AlexStore.Domain.StoreContext.ValueObjects;
+﻿using AlexStore.Domain.SharedContext.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

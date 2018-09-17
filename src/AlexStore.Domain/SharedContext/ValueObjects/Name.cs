@@ -1,7 +1,7 @@
 ﻿using FluentValidator;
 using FluentValidator.Validation;
 
-namespace AlexStore.Domain.StoreContext.ValueObjects
+namespace AlexStore.Domain.SharedContext.ValueObjects
 {
     public class Name : Notifiable
     {

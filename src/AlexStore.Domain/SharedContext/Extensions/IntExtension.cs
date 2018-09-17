@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AlexStore.Domain.StoreContext.Extensions
+namespace AlexStore.Domain.SharedContext.Extensions
 {
     public static class IntExtension
     {

@@ -1,4 +1,5 @@
 ﻿using AlexStore.Domain.StoreContext.Enums;
+
 namespace AlexStore.Domain.StoreContext.Entities
 {
     public class Address

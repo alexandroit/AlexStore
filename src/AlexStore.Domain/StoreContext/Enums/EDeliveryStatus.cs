@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AlexStore.Domain.StoreContext.Enums
+﻿namespace AlexStore.Domain.StoreContext.Enums
 {
     public enum EDeliveryStatus
     {

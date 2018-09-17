@@ -1,5 +1,5 @@
+using AlexStore.Domain.SharedContext.ValueObjects;
 using AlexStore.Domain.StoreContext.Entities;
-using AlexStore.Domain.StoreContext.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlexStore.Tests
